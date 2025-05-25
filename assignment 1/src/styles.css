@@ -1,0 +1,127 @@
+/* Colorful, Modern, Attractive Form Design */
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(to right, #667eea, #764ba2);
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+form {
+    background-color: #ffffff;
+    padding: 40px 30px;
+    border-radius: 16px;
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.2);
+    width: 100%;
+    max-width: 500px;
+    animation: slideUp 0.6s ease-out;
+}
+
+@keyframes slideUp {
+    from {
+        transform: translateY(50px);
+        opacity: 0;
+    }
+
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+form h2 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 25px;
+    font-weight: 600;
+}
+
+label {
+    font-weight: 500;
+    color: #444;
+    display: block;
+    margin-bottom: 6px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"],
+select {
+    width: 90%;
+    padding: 12px 14px;
+    border: 2px solid #ddd;
+    border-radius: 10px;
+    margin-bottom: 18px;
+    font-size: 15px;
+    transition: 0.3s ease;
+    background-color: #f9f9f9;
+}
+
+input:focus,
+select:focus {
+    border-color: #667eea;
+    outline: none;
+    box-shadow: 0 0 6px #667eea88;
+    background-color: #fff;
+}
+
+input[type="checkbox"] {
+    margin-right: 6px;
+    accent-color: #764ba2;
+}
+
+.phone-inputs {
+    display: flex;
+    gap: 10px;
+}
+
+.phone-inputs input {
+    flex: 1;
+}
+
+.error {
+    color: #e53935;
+    font-size: 13px;
+    margin-top: -12px;
+    margin-bottom: 12px;
+}
+
+button,
+input[type="submit"] {
+    background: linear-gradient(to right, #43cea2, #185a9d);
+    color: #fff;
+    border: none;
+    padding: 12px;
+    border-radius: 10px;
+    font-size: 16px;
+    cursor: pointer;
+    font-weight: 600;
+    transition: background 0.3s ease;
+    width: 100%;
+    box-shadow: 0 5px 15px rgba(67, 206, 162, 0.3);
+}
+
+button:hover,
+input[type="submit"]:hover {
+    background: linear-gradient(to right, #185a9d, #43cea2);
+}
+
+label.inline {
+    display: inline-block;
+    margin-top: 10px;
+}
+
+@media (max-width: 600px) {
+    form {
+        padding: 25px;
+    }
+
+    input,
+    select {
+        font-size: 14px;
+    }
+}
