@@ -1,0 +1,84 @@
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  transition: background 0.3s, color 0.3s;
+}
+
+.app-container {
+  display: flex;
+  min-height: 100vh;
+  background-color: #f4f4f4;
+  color: #333;
+}
+
+.app-container.dark {
+  background-color: #1e1e1e;
+  color: #f4f4f4;
+}
+
+.sidebar {
+  width: 220px;
+  background-color: #282c34;
+  color: white;
+  padding: 20px;
+}
+
+.sidebar h2 {
+  margin-bottom: 20px;
+}
+
+.sidebar a {
+  color: white;
+  text-decoration: none;
+  display: block;
+  padding: 10px 0;
+}
+
+.sidebar a:hover {
+  text-decoration: underline;
+}
+
+.main-content {
+  flex: 1;
+  padding: 20px;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+  background: #eaeaea;
+}
+
+.theme-toggle {
+  background: transparent;
+  border: none;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+.page {
+  padding: 20px;
+  background: white;
+  border-radius: 8px;
+}
+
+.kanban {
+  display: flex;
+  gap: 20px;
+}
+
+.kanban-column {
+  flex: 1;
+  background: #ececec;
+  padding: 10px;
+  border-radius: 8px;
+}
+
+.kanban-card {
+  background: white;
+  margin-bottom: 10px;
+  padding: 10px;
+  border-radius: 6px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
